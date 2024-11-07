@@ -31,14 +31,14 @@ Our app is built with a powerful tech stack to ensure a smooth, responsive, and 
 Frontend: React, JavaScript, HTML, CSS
 Backend: Node.js, Express.js, MongoDB Atlas
 Cloud Platform: Vultr for hosting and scalability
-Real-time Communication: Socket.io and WebRTC for secure video and audio streaming
+Real-time Communication: Socket.io
 Target Audience 🎯
 Our app is designed with two main audiences in mind:
 
 Primary: Expectant mothers, particularly first-time moms during their "fourth trimester."
 Secondary: Healthcare providers and caregivers who want to support patients with real-time monitoring and remote consultations.
 Feasibility & Scalability 🔍
-Technical Feasibility: The app’s tech stack (React, Node.js, MongoDB, WebRTC) provides scalability and smooth performance, even for real-time features.
+Technical Feasibility: The app’s tech stack (React, Node.js, MongoDB, socket.io) provides scalability and smooth performance, even for real-time features.
 Complexity (Medium): Integrating AI, wearables, and external APIs adds complexity, but well-documented tools and APIs make this manageable.
 Resource Allocation: Partnering with clinics and insurance providers enables licensed doctor consultations and comprehensive maternity coverage directly in the app.
 Getting Started
