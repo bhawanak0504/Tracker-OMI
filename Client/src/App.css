@@ -1,0 +1,8 @@
+.full-background {
+  background-color: #FFD8E4; /* Example background color, change as needed */
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

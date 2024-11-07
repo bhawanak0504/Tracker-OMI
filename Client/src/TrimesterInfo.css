@@ -1,0 +1,100 @@
+.trimester-info {
+    padding: 20px;
+    background-color: #c9c3f2; /* Single purple background */
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    font-family: 'Arial', sans-serif; /* Use a friendly font */
+}
+
+.tri-head {
+    margin-bottom: 10px;
+    text-align: center; /* Center align headings */
+}
+
+.trimester-title {
+    color: #ff69b4; /* Pink color for headings */
+    padding: 10px; /* Padding around the heading */
+    border: 2px solid #ffffff; /* White border for headings */
+    border-radius: 5px; /* Slightly rounded corners */
+    background-color: rgba(255, 255, 255, 0.2); /* Light background for contrast */
+    font-size: 24px; /* Larger font size for better visibility */
+    font-weight: bold; /* Bold font weight for emphasis */
+}
+
+.error-message {
+    color: #e74c3c; /* Error color */
+    text-align: center; /* Center align error message */
+}
+
+.tip {
+    text-align: center; /* Center align paragraphs */
+    color: #555;
+}
+
+.video-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Space between video cards */
+}
+
+.trimester-card {
+    background: #ffcccb; /* Light red color for cards */
+    border: none; /* No border for cleaner look */
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+    width: 80%; /* Set width to 80% */
+    max-width: 500px; /* Max width for cards */
+    margin: 0 auto; /* Center the cards */
+}
+
+.trimester-card:hover {
+    transform: translateY(-2px); /* Slight lift on hover */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+}
+
+.video-card {
+    background: #add8e6; /* Light blue color for video cards */
+    border: none; /* No border for cleaner look */
+    border-radius: 8px; /* More rounded corners */
+    padding: 10px; /* Smaller padding */
+    width: 80%; /* Set width to 80% */
+    max-width: 680px; /* Max width for video cards */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    margin: 0 auto; /* Center the video cards */
+}
+
+.video-card:hover {
+    transform: scale(1.02); /* Slight zoom effect on hover */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* More pronounced shadow */
+}
+
+.video-preview {
+    width: 100%; /* Make video fit card width */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 100%; /* Set max width to limit size */
+    border-radius: 8px; /* Rounded corners for videos */
+}
+
+.video-title {
+    margin: 10px 0;
+    color: #ff69b4; /* Pink color for titles */
+    text-align: center; /* Center align titles */
+}
+
+.video-title:hover {
+    text-decoration: underline; /* Underline on hover */
+    color: #ff1493; /* Darker pink on hover */
+}
+
+.card-title {
+    color: #ff69b4; /* Pink color for card titles */
+    margin-bottom: 5px; /* Margin below title */
+    font-weight: bold; /* Bold for emphasis */
+}

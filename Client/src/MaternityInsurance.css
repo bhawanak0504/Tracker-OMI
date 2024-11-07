@@ -1,0 +1,321 @@
+.insurance-container {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    padding-top: 70px; /* Adjust this based on the header height */
+}
+
+
+.insurance-header {
+    position: fixed; /* Make the header fixed */
+    top: 0; /* Position it at the top */
+    left: 0; /* Align it to the left */
+    width: 100%; /* Full width */
+    display: flex;
+    justify-content: center; /* Center the title horizontally */
+    align-items: center; /* Vertically center content */
+    padding: 10px 0;
+    z-index: 1000; /* Ensure it's on top of other content */
+    border-bottom: 2px solid #000; /* Optional bottom border */
+    background-color: #FFD8E4;
+}
+
+.back-arrow {
+    position: absolute;
+    left: 20px;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.tag-line {
+    margin-bottom: 20px; /* Smaller margin */
+    padding: 20px 20px; /* Adjusted padding for a more compact look */
+    font-style: italic;
+    font-size: 18px; /* Slightly smaller font size */
+    color: #ffffff; /* White text */
+    background-color: #5498e6; /* A bold blue color */
+    width: 500px; /* Width adjusts automatically to the content */
+    max-width: 80%; /* Ensures it doesn't get too wide on smaller screens */
+    border-radius: 12px; /* Soft rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    text-align: center; /* Center the text */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+    margin-left: 500px;
+    margin-top: 10px;
+    
+ 
+}
+
+.tag-line:hover {
+    transform: translateY(-3px); /* Subtle lift on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+}
+
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    grid-template-rows: repeat(3, 1fr);    /* 3 equal rows */
+    gap: 0px; /* Spacing between grid items */
+    justify-items: center; /* Center the items horizontally */
+    align-items: center;   /* Center the items vertically */
+    margin-top: -90px; /* Some margin on top */
+}
+
+.feature-item {
+    text-align: center;
+    margin: 10px;
+    font-size: 1rem;
+    background-color:white ;
+    padding: 5px;
+    border-radius: 10px;
+    color: #ED407C;
+    font-weight: bolder;    
+}
+.feature-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px; /* Adjust the width as needed */
+}
+
+/* Main image centered */
+.main {
+    grid-column: 2 / 3; /* Main image in the center column */
+    grid-row: 2 / 3;    /* Main image in the center row */
+    transform: translate(-70px, -150px); /* Adjust these values for fine-tuning */
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+
+.main img {
+    width: 600px; /* Adjust main image size */
+ 
+}
+
+/* Position "Cashless Treatment" opposite "Virtual Consultation" */
+.feature-3 {
+    grid-column: 1 / 2; /* Place in the first column */
+    grid-row: 2 / 3;    /* Middle row */
+    margin-left: 250px;
+    margin-top: -50px;
+}
+.feature-4 {
+    grid-column: 3 / 4; /* Place in the third column (opposite side) */
+    grid-row: 2 / 3;    /* Middle row */
+    transform: translateX(-150px); /* Move it 50px to the left */
+    margin-top: -50px; /* Keep your vertical shift */
+}
+
+.feature-2{
+    margin-left: 500px;
+}
+.feature-1{
+    margin-left: 300px;
+}
+
+
+
+/* General container styles for the actions section */
+
+    .actions {
+        display: flex;                     /* Use flexbox for layout */
+        flex-wrap: wrap;                  /* Allow wrapping to new rows */
+        justify-content: space-around;     /* Space items evenly */
+        margin: 20px;                     /* Margin around the container */
+    }
+    
+
+
+/*/* Style for the header */
+.action-header {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 0px;
+    color: #ED407C;
+    margin-top: -300px; /* Shifts the header upwards */
+    background-color: white;
+    width: 500px;
+    margin-left: 500px;
+    border-radius: 20px;
+}
+
+
+
+
+.map-heading {
+    font-size: 2rem; /* Adjust font size as needed */
+    font-weight: bold; /* Make the text bold */
+    margin-bottom: 15px; /* Space between heading and search bar */
+    text-align: center; /* Center the heading */
+    color: #ED407C;
+  }
+  
+
+
+/* Main map container */
+.mainmap {
+    position: relative;
+    padding: 20px;
+    margin-top: 150px;
+    background-color: white;
+    border-radius: 10px;
+    height: 800px;
+  }
+  
+/* Search bar container */
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    width: 80%;
+    padding: 10px;
+ 
+    z-index: 1001; /* Keep it above the map */
+  
+  }
+  
+  /* Input styling */
+  .search-bar input {
+    flex-grow: 1;
+    padding: 8px;
+    border: 1px solid #ED407C;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #ED407C;
+  }
+  
+  /* Magnifying glass icon positioning */
+  .fa-magnifying-glass {
+    margin-left: -30px;
+    margin-top: -10px;
+    color: #ED407C;
+  }
+  
+  /* Hospital type legend (right-side box) */
+  .type {
+  
+    top: 20px;
+    margin-left: 1200px;
+    z-index: 1000;
+   
+  }
+  
+  .type ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .type li {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .type li:last-child {
+    margin-bottom: 0;
+  }
+  
+  .fa-map-marker-alt {
+    font-size: 18px;
+  }
+  
+  /* Map container styling */
+  .leaflet-container {
+    height: 500px; /* You can adjust this as needed */
+    width: 80%;
+    border: 5px solid  #ED407C;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px; /* Add margin to create space between the search bar and the map */
+    margin-left: 20px;
+  }
+  
+  /* Fullscreen overlay styling */
+  .fullscreen-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .overlay-content {
+    background-color: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    position: relative;
+  }
+  
+  .close-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    color: black;
+    cursor: pointer;
+  }
+  
+  .overlay-content input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 20px;
+  }
+  
+  .overlay-content button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .overlay-content button:hover {
+    background-color: #0056b3;
+  }
+  
+
+
+/* Footer */
+.footer {
+    display: flex;
+    justify-content: space-around; /* Distribute the icons evenly */
+    width: 100%; /* Full width of the viewport */
+    padding: 10px; /* Padding inside the footer */
+    background-color: white; /* Background color */
+    border-top: 1px solid #ddd; /* Light top border */
+    position: fixed; /* Fix the footer to the bottom */
+    bottom: 0; /* Align to the bottom of the viewport */
+    left: 0; /* Ensure it sticks to the left */
+    z-index: 1000; /* Ensure it stays on top of other content */
+}
+
+.footer-icon {
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: #ff6699; /* Color of the icons */
+    cursor: pointer;
+}
+

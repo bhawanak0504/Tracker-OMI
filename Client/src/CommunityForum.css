@@ -1,0 +1,249 @@
+.forum-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh; /* Set full height of the viewport */
+    width: 100vw; /* Set full width of the viewport */
+    overflow-y: auto; /* Allow scrolling if the content overflows */
+    padding: 20px;
+    
+    padding-top: 60px; /* Add padding to prevent merging with the fixed header */
+}
+
+/* Forum Header */
+.forum-header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 2px solid #000; /* Black bottom border */
+    width: 100vw;
+    margin-top: -40px;
+  
+}
+
+.back {
+    position: absolute;
+    left: 30px; /* Adjust as needed for padding from the left */
+    font-size: 24px; /* Adjust the size of the back arrow */
+    cursor: pointer;
+}
+
+
+
+.horizontal-line {
+    height: 2px;
+    width: 100%; /* Full width line */
+    background-color: black;
+}
+
+/* Tab Menu */
+.tab-menu {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.tab {
+    padding: 10px;
+    border: none;
+    background: none;
+    font-size: 16px;
+    cursor: pointer;
+    color: black;
+}
+.tab:hover{
+    color: white;
+}
+
+.tab.active {
+    border-bottom: 2px solid #ED407C;
+}
+.delete-icon {
+    cursor: pointer; /* Change cursor to pointer on hover */
+     /* Change color to indicate delete action */
+    margin-left: 10px; /* Space between follow icon and delete icon */
+}
+
+/* Post List */
+.post-list {
+    flex: 1; /* Take available space */
+    width: 100%; /* Cover the entire width */
+    overflow-y: auto;
+    margin-top: 10px;
+    margin-bottom: 70px; /* Space for footer */
+}
+
+.post {
+    background-color: white;
+    border-radius: 12px;
+    padding: 16px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Full width posts */
+}
+
+
+.follow-icon {
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 50%;
+    transition: background 0.2s;
+  }
+  
+  .follow-icon:hover {
+    background: rgba(0, 0, 0, 0.1);
+  }
+  
+  .follow-icon.following {
+    color: green; /* Change color if following */
+  }
+  
+/* Add styles for the profile layout */
+.profile {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+    margin-bottom: 15px; /* Space between profiles */
+}
+
+.profile-pic {
+    width: 40px; /* Profile picture size */
+    height: 40px; /* Profile picture size */
+    border-radius: 50%; /* Make it circular */
+    margin-right: 10px; /* Space between image and text */
+}
+
+
+
+  
+
+/* Post Header */
+.post-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.time {
+    color: #888;
+    font-size: 12px;
+}
+
+.post-text {
+    margin: 10px 0;
+    font-size: 14px;
+    color: #555;
+}
+
+.post-footer {
+    display: flex;
+    justify-content: space-around;
+    font-size: 14px;
+    color: #ff6699;
+    cursor: pointer;
+}
+
+/* Plus Button */
+.plus-button {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    background-color: #ED407C;
+    color: white;
+    font-size: 30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex; /* Flexbox for centering */
+    justify-content: center; /* Center text horizontally */
+    align-items: center; /* Center text vertically */
+    transition: background-color 0.2s, transform 0.2s; /* Add a smooth transition for hover effect */
+}
+.plus-button:hover {
+    background-color: #ff5a8c; /* Darken on hover */
+    transform: scale(1.1); /* Slightly increase size on hover */
+}
+/* Modal for New Post */
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color:white;
+    padding: 15px; /* Reduce padding for a more compact look */
+    border-radius: 8px; /* Slightly smaller border radius */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Adjusted shadow for a softer look */
+    display: flex;
+    flex-direction: column;
+    width: 300px; /* Set a fixed width for consistency */
+    height: 300px;
+    border-color: #000 2px;
+}
+
+.modal textarea {
+    width: 100%;
+    height: 60px; /* Reduce height for a more compact textarea */
+    margin-bottom: 8px; /* Reduce space between textarea and button */
+    padding: 8px; /* Slightly smaller padding */
+    border: 1px solid #ddd;
+    border-radius: 5px; /* Smaller border radius */
+}
+
+.modal button {
+    margin-top: 5px;
+    padding: 8px; /* Reduce padding for buttons */
+    border: none;
+    cursor: pointer;
+    font-size: 14px; /* Adjust font size */
+}
+
+.modal button:first-of-type {
+    background-color: #ED407C; /* Color for the post button */
+    color: white;
+    border-radius: 5px; /* Smaller border radius */
+}
+
+.modal button:last-of-type {
+    background-color: #ED407C; /* Color for the close button */
+    border-radius: 5px; /* Smaller border radius */
+    
+}
+
+/* Additional styles for better responsiveness */
+.modal button {
+    width: 100%; /* Make buttons full width */
+}
+
+
+/* Footer */
+.forum-footer {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 10px;
+    background-color: white;
+    border-top: 1px solid #ddd;
+    position: absolute;
+    bottom: 0;
+}
+
+.footer-icon {
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: #ff6699;
+    cursor: pointer;
+}

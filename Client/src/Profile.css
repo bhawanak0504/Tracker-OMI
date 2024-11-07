@@ -1,0 +1,199 @@
+/* Parent Container to Center Entire Profile Component */
+.profile-container {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    height: calc(100vh - 70px - 60px); /* Adjust height to account for header and footer */
+    width: 100vw;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    padding-top: 70px; /* Based on header height */
+    padding-bottom: 70px; /* Extra space for footer height */
+    overflow-y: auto;
+}
+
+/* Header Styling */
+.profile-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    z-index: 1000;
+    border-bottom: 2px solid #000;
+    background-color: #FFD8E4;
+}
+
+/* Profile Photo Section */
+.profile-photos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile-photos img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #333;
+}
+
+.profile-photos label {
+    display: block;
+    padding: 10px 15px;
+    background-color: #ed407c;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.profile-photos input[type="file"] {
+    display: none;
+}
+
+/* Profile Details Styling */
+.profiles-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align input fields within container */
+    gap: 15px;
+  width: 500px;
+  margin-left: 490px;
+  background: linear-gradient(135deg, #f9f9f9, #e3f2fd); /* Subtle gradient */
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Softer, larger shadow */
+    border: 1px solid #e0e0e0; /* Adds a slight border */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+.profile-details:hover {
+    transform: translateY(-5px); /* Slight lift effect on hover */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.profiles-details input,
+.profiles-details textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    background-color: #ffffff;
+}
+
+.profiles-details textarea {
+    resize: vertical;
+    height: 80px;
+}
+
+.profiles-details input:focus,
+.profiles-details textarea:focus {
+    border-color: #90caf9; /* Light blue border on focus */
+    outline: none;
+}
+
+.Bhumi {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Space between the text and icon */
+    margin: 20px 0;
+    font-family: Arial, sans-serif;
+    color: #333; /* Dark gray for text */
+    margin-left: 20px;
+}
+
+.Bhumi h2 {
+    font-size: 34px;
+    font-weight: 500;
+    margin: 0;
+    text-transform: capitalize;
+
+}
+
+.wavings-hand-icon {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    transition: transform 0.2s ease;
+}
+
+.wavings-hand-icon:hover {
+    transform: rotate(15deg); /* Small rotation effect when hovered */
+}
+
+/* Reset Button Styling */
+.profile-reset-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ed407c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+    width: 300px;
+    margin-left: 590px;
+}
+
+.profile-reset-button:hover {
+    background-color: #e82166;
+}
+.birthday-countdown {
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .birthday-countdown h3 {
+    margin: 0;
+    font-size: 20px;
+    color: #ff6f61; /* A pleasant color for countdown */
+  }
+  .achievement-badge {
+    background-color: #e4f9e7;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 18px;
+    color: #2d6a4f;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .achievement-badge h3 {
+    margin: 0;
+    font-size: 20px;
+    color: #28a745; /* Green color for achievement */
+  }
+
+  .profile-logout-button{
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ed407c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 30px;
+    transition: background-color 0.3s;
+    width: 300px;
+    margin-left: 590px;
+
+  }
+    

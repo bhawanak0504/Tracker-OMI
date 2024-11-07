@@ -1,0 +1,81 @@
+.energetic-exercise-container {
+    padding: 20px;
+    text-align: center; /* Center-align text and child elements */
+    background: linear-gradient(to bottom right, #d9e9ff, #f2f2f2);
+}
+
+.exercise-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align all exercise cards */
+    gap: 10px; /* Reduced gap between exercises */
+}
+
+.exercise-card {
+    border: 1px solid rgb(104, 104, 230);
+    border-radius: 8px;
+    padding: 10px; /* Reduced padding for a smaller card */
+    background: linear-gradient(to bottom right, #b2ebf2, #e1bee7); /* Mint Green to Lavender */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s; /* Added transform for scaling effect */
+  width :500px;/* Limit the max width of cards */
+}
+
+.exercise-card:hover {
+    background-color: #e7f3fe;
+    transform: scale(1.02); /* Slightly enlarge on hover */
+}
+
+.exercise-section {
+    padding: 8px; /* Reduced padding */
+}
+
+.completed {
+    background-color: #d4edda; /* Light green background for completed */
+}
+
+.exercise-gif-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.exercise-gif {
+    width: 300px; /* Set a smaller width for the GIFs */
+    height: 300px; /* Set a smaller height for the GIFs */
+   
+    animation: fadeIn 0.5s ease; /* Add fade-in effect for gifs */
+}
+
+.exercise-title-image {
+    width: 300px; /* Set a smaller width for the title images */
+    height: 300px; /* Set a smaller height for the title images */
+   
+}
+
+.complete-button {
+    margin-top: 8px; /* Reduced margin */
+    padding: 8px; /* Reduced padding */
+    border: none;
+    border-radius: 5px;
+    background-color: #28a745; /* Green button */
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transition for hover effect */
+}
+
+.complete-button:hover {
+    background-color: #218838; /* Darker green on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Keyframes for fadeIn animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

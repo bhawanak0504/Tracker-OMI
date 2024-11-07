@@ -1,0 +1,38 @@
+.register-container{
+    background-image: url('assets/Login.png'); /* Set the background image */
+    background-size: cover; /* Cover the entire container */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat;
+    background-color: white;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    padding: 20px;
+    
+    width: 90%; /* Use percentage for responsiveness */
+    max-width: 900px; /* Maximum width to limit size on larger screens */
+    margin: 20px; /* Margin to separate from edges */
+}
+.mb-3 input{
+    background-color: rgb(226, 237, 248);
+}
+.mb-3 input:focus{
+    background-color: rgb(226, 237, 248);
+}
+.btn{
+color: rgb(8, 8, 8);
+border-color: rgb(233, 96, 119);
+
+}
+.btn:hover{
+    border-color: rgb(233, 96, 119);
+
+}
+.login{
+    color: black;
+}
+.login:hover{
+    color: #ea56a0;
+}
+  
+  
+  

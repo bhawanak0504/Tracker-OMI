@@ -1,0 +1,104 @@
+.new-game-container {
+    background: linear-gradient(to bottom right, #d9e9ff, #f2f2f2);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+    border-color: #0097a7;
+}
+
+
+.word-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.word {
+    background-color: #ffe0b2; /* Light orange card */
+    border: 1px solid #f57c00; /* Dark orange border */
+    border-radius: 8px;
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #424242; /* Dark gray text */
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.word:hover {
+    background-color: #ffcc80; /* Darker orange on hover */
+    transform: scale(1.05);
+}
+
+.found {
+    background-color: #b2ebf2; /* Light teal for found words */
+    border-color: #0097a7; /* Dark teal */
+    color: #006064; /* Darker text color */
+}
+
+input {
+    padding: 10px;
+    border: 2px solid #64b5f6; /* Sky blue border */
+    border-radius: 5px;
+    width: 60%;
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.sumit {
+    background-color: #4caf50; /* Green button */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+.sumit:hover {
+    background-color: #388e3c; /* Darker green on hover */
+    transform: scale(1.05);
+}
+
+.found-words {
+    margin-top: 20px;
+}
+
+.found-word {
+    background-color: #c8e6c9; /* Light green for found words display */
+    padding: 5px;
+    border-radius: 5px;
+    margin: 5px;
+    display: inline-block;
+    border: 1px solid #1b5e20; /* Dark green border */
+}
+
+.hint-button {
+    background-color: #ffccbc; /* Light peach for the hint button */
+    color: #d84315; /* Darker peach text */
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.hint-button:hover {
+    background-color: #ffab40; /* Darker peach on hover */
+    transform: scale(1.05);
+}
+
+.hint {
+    margin-top: 5px;
+    font-style: italic;
+    color: #555; /* Grey text for hints */
+    background-color: #f1f8e9; /* Light greenish background for hints */
+    border-left: 4px solid #8bc34a; /* Green left border for emphasis */
+    padding: 5px;
+    border-radius: 5px;
+}

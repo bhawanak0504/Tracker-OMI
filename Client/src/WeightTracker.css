@@ -1,0 +1,107 @@
+.weights-tracker {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .whead h1 {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .whead h1 svg {
+    margin-left: 8px;
+    font-size: 20px;
+  }
+  
+  .wimage {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .inputsssss-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .inputsssss-section input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  
+  
+  
+  
+  .chartss-section {
+    margin-top: 20px;
+  }
+  
+  .chartss-section h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  
+  .charts {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+  }
+  
+ 
+  .bars span {
+    position: absolute;
+    bottom: -25px;
+    right: 0; /* Shift the span to the right */
+    width: auto; /* Allow width to adjust based on content */
+    color: #555;
+    text-align: leftt; /* Align text to the right */
+  }
+  
+  
+  .bars {
+    background-color: #4caf50;
+    color: white;
+    text-align: center;
+    width: 50px;
+    border-radius: 4px;
+    position: relative; /* Ensures the buttons are positioned relative to the bar */
+    overflow: visible; /* Ensures buttons inside the bar aren't clipped */
+  }
+  
+ 
+  
+  
+  
+  
+  .progresss-bar {
+    margin-top: 20px;
+    background-color: #e0e0e0;
+    height: 10px;
+    border-radius: 5px;
+  }
+  
+  .progress {
+    height: 100%;
+    background-color: #4caf50;
+    border-radius: 5px;
+  }
+  
+  .wmotivational-message {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 16px;
+    color: #555;
+  }
+  

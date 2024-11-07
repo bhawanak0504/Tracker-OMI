@@ -1,0 +1,179 @@
+.resources-container {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    height: calc(100vh - 70px - 60px); /* Adjust height to account for header and footer */
+    width: 100vw;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    padding-top: 70px; /* Based on header height */
+    padding-bottom: 70px; /* Extra space for footer height */
+    overflow-y: auto;
+  }
+  
+  .resources-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    z-index: 1000;
+    border-bottom: 2px solid #000;
+    background-color: #FFD8E4;
+  }
+
+  .rsearch-bar {
+    display: flex;
+    align-items: center;
+    margin: 20px 0; /* Space around the search bar */
+    padding: 10px;
+    border: 2px solid #ccc; /* Border for the search bar */
+    border-radius: 30px; /* Rounded corners */
+    background-color: #f9f9f9; /* Light background color */
+    transition: border-color 0.3s; /* Smooth transition for focus */
+  }
+  
+  .rsearch-bar input {
+    flex: 1; /* Take up available space */
+    border: none; /* Remove default border */
+    outline: none; /* Remove outline on focus */
+    padding: 10px 15px; /* Padding inside the input */
+    border-radius: 30px; /* Match rounded corners */
+    font-size: 16px; /* Font size for input text */
+    background-color: transparent; /* Transparent background */
+  }
+  
+  .rsearch-bar input::placeholder {
+    color: #999; /* Placeholder text color */
+  }
+  
+  .rsearch-bar input:focus {
+    border-color: #ed407c; /* Change border color on focus */
+  }
+  
+  .rfa-magnifying-glass {
+    margin-right: 10px; /* Space between input and icon */
+    color: #ed407c; /* Icon color */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: color 0.3s; /* Smooth transition for hover effect */
+    font-size: 20px;
+  }
+
+
+  
+/* Section Headers */
+.rvideo  {
+    font-size: 1.8rem;
+    color: #333;
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #ed407c;
+    margin-bottom: 20px;
+  }
+  
+  /* Each section container */
+  .rvideos-section,
+  .rarticles-section,
+  .saved-resources {
+    background-color: #ffd8e4;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Resources List */
+  .resources-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* responsive columns */
+    gap: 20px;
+  }
+  
+  /* Resource Items */
+  .resource-item,
+  .saved-resource-item {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+  }
+  
+  .resource-item:hover,
+  .saved-resource-item:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Title and Description */
+  .rtitle h3 {
+    font-size: 1.4rem;
+    color: #333;
+  }
+  
+  .no ,
+  .n  {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 5px;
+  }
+  
+  /* Iframe for videos */
+  iframe {
+    border-radius: 10px;
+    margin-top: 10px;
+  }
+  
+  /* Buttons */
+  .rsave button,
+  .rlike button {
+    background-color: #ed407c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+  }
+  
+  .rsave button:hover,
+  .rlike button:hover {
+    background-color: #ff759b;
+  }
+  
+  /* Read More link */
+  a {
+    color: #ed407c;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+    display: inline-block;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* No content message */
+  .no  {
+    font-size: 1.2rem;
+    color: #999;
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .resources-list {
+      grid-template-columns: 1fr; /* single column on smaller screens */
+    }
+  }
+  
+  
+
+
+
+
+

@@ -1,0 +1,147 @@
+/* DVisualization.css */
+.v-container {
+    font-family: 'Arial', sans-serif;
+    padding: 20px;
+    height: calc(100vh - 70px - 60px); /* Adjust height to account for header and footer */
+    width: 100vw;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    padding-top: 70px; /* Based on header height */
+    padding-bottom: 70px; /* Extra space for footer height */
+    overflow-y: auto;
+}
+
+.v-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    z-index: 1000;
+    border-bottom: 2px solid #000;
+}
+
+.back-arrow {
+    position: absolute;
+    left: 20px;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.promptv-box {
+    background: linear-gradient(135deg, #6A5ACD, #FF69B4); /* Purple to hot pink gradient */
+    padding: 20px;
+    border-radius: 12px; /* Slightly more rounded corners */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2); /* Softer shadow for depth */
+    margin: 20px 0; /* Space between header and footer */
+    width: 600px; /* Ensure it takes enough space */
+    height: 200px;
+  /* Optional: limit max width for larger screens */
+    align-self: center;
+    border: 2px solid #FF69B4; /* Hot pink border */
+    transition: background 0.5s, transform 0.3s; /* Smooth transition for background and scaling */
+}
+
+.promptv-box:hover {
+    background: linear-gradient(135deg, #FF69B4, #6A5ACD); /* Reverse gradient on hover */
+    transform: scale(1.02); /* Slight scaling effect on hover */
+}
+
+.promptv-box h3 {
+    color: #FFFFFF; /* White color for the title for better contrast */
+    font-size: 1.5em; /* Increased font size for prominence */
+    text-align: center; /* Centered text for a cleaner look */
+    margin-bottom: 15px; /* Spacing below title */
+}
+
+.inputv-group {
+    margin: 10px 0; /* Space between input groups */
+}
+
+inputv {
+    width: 100%; /* Full width inputs */
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s, box-shadow 0.3s; /* Added shadow transition */
+}
+
+inputv:focus {
+    border-color: #FF69B4; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 5px rgba(255, 105, 180, 0.5); /* Soft pink glow on focus */
+}
+
+.submitv-button {
+    padding: 12px;
+    background-color: #90EE90; /* Light green color */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s; /* Add transform effect */
+    font-weight: bold; /* Bold text */
+}
+
+.submitv-button:hover {
+    background-color: #66CDAA; /* Medium aquamarine on hover */
+    transform: translateY(-2px); /* Lift effect */
+}
+.timeline {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.week-circle {
+    width: 40px;
+    height: 40px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.week-circle.active {
+    background-color: #6A5ACD; /* Dark slate blue when active */
+    border-color: #FF69B4; /* Hot pink border for active week */
+    color: white; /* White text for better contrast */
+}
+
+
+.star-badge {
+    font-size: 24px;
+    position: absolute; /* Position it as needed */
+    top: -10px; /* Adjust the position */
+    left: -10px; /* Adjust the position */
+}
+.resets {
+  width: 500px;
+    color: white; /* Text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 20px; /* Padding for top/bottom and left/right */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+    outline: none; /* Remove outline */
+    align-self: center;
+  }
+  
+  .resets:hover {
+    
+    transform: scale(1.05); /* Slightly enlarge on hover */
+  }
+  
+  .resets:focus {
+    box-shadow: 0 0 0 2px rgba(255, 107, 107, 0.5); /* Focus shadow effect */
+  }
+  

@@ -1,0 +1,207 @@
+.calendar-container {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    height: calc(100vh - 70px - 60px); /* Adjust height to account for header and footer */
+    width: 100vw;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    padding-top: 70px; /* Based on header height */
+    padding-bottom: 70px; /* Extra space for footer height */
+    overflow-y: auto;
+  }
+  
+  .calendar-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    z-index: 1000;
+    border-bottom: 2px solid #000;
+    background-color: #FFD8E4;
+  }
+
+
+/* Styling for the form box */
+.form-section {
+    background: linear-gradient(135deg, #a1c4fd, #c2e9fb); /* Light blue gradient */
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Slightly stronger shadow */
+    margin-top: 20px;
+    text-align: center; /* Center-align all content */
+  }
+  
+  .form-section label {
+    display: block;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 8px;
+    font-size: 16px;
+  }
+  
+  /* Dropdown menu styling */
+  .dropdown {
+    width: 80%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    font-size: 16px;
+    background-color: #e0f7ff; /* Very light blue background */
+    color: #333;
+    margin: 0 auto;
+  }
+  
+  input[type="date"] {
+    width: 80%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    font-size: 16px;
+    background-color: #e0f7ff; /* Very light blue background */
+    color: #333;
+    margin: 0 auto;
+  }
+  
+  /* Bright blue gradient button */
+  .calculate-btn {
+    width: 50%; /* Smaller width for the button */
+    padding: 10px;
+    background: linear-gradient(90deg, #4facfe, #00f2fe); /* Bright blue gradient */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    margin: 10px auto;
+    display: block;
+  }
+  
+  .calculate-btn:hover {
+    background: linear-gradient(90deg, #3a9efb, #00c9e5); /* Darker blue gradient on hover */
+    transform: scale(1.02);
+  }
+  
+  
+  .preset-btn {
+ 
+  width: 500px;
+    padding: 12px;
+    background: linear-gradient(90deg, #4facfe, #00f2fe); /* Bright blue gradient */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s;
+    margin-left: 510px;
+   
+
+  }
+  .he {
+    background-color: #f0f8ff; /* Light background for emphasis */
+    border: 1px solid #e0e0e0; /* Light gray border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 15px; /* Spacing inside the box */
+    margin: 20px 0; /* Space above and below */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    text-align: center; /* Center the text */
+  }
+  
+  .he p {
+    color: #333; /* Dark gray text for readability */
+    font-size: 16px; /* Font size */
+    line-height: 1.5; /* Line height for better readability */
+    margin: 0; /* Remove default margin */
+  }
+  
+  .preset-btn:hover{
+      background: linear-gradient(90deg, #3a9efb, #00c9e5); /* Darker blue gradient on hover */
+    transform: scale(1.02);
+  }
+.result {
+  background-color: #f9f9f9;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.ptt {
+  color: #4caf50;
+}
+
+.pt{
+  margin: -3px 0 10px;
+  color: #333;
+  color: #ed407c;
+  font-weight: bold;
+
+}
+
+.timeline {
+  margin-top: 20px;
+}
+
+.timeline-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+  height: 30px; /* Adjust height as needed */
+  background-color: #e0e0e0;
+  border-radius: 5px;
+}
+
+.trimester-section {
+  height: 100%;
+  border-radius: 5px;
+}
+
+.first-trimester {
+  background-color: #ffcccb; /* Light red/pink */
+  width: 33.33%; /* Adjust based on actual trimester length */
+}
+
+.second-trimester {
+  background-color: #add8e6; /* Light blue */
+  width: 33.33%; /* Adjust based on actual trimester length */
+}
+
+.third-trimester {
+  background-color: #90ee90; /* Light green */
+  width: 33.33%; /* Adjust based on actual trimester length */
+}
+
+.trimester-labels {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.trimester-labels div {
+  flex: 1;
+  padding: 0 10px;
+  text-align: center;
+}
+
+.pttt {
+  margin: 0;
+  font-size: 1.1em;
+  color: #555;
+}
+.pag {
+  margin: 5px 0 0;
+  color: #777;
+}

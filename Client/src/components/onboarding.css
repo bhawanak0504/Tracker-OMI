@@ -1,0 +1,144 @@
+body {
+  margin: 0; /* Remove default margin */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Full height of the viewport */
+  background-color: #FFD8E4; /* Optional: Background color for contrast */
+}
+
+.onboarding-container {
+  max-width: 720px; /* Set a max width */
+  height: 720px;
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.9); /* Slightly more opaque background for better visibility */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.onboarding-image {
+  border-radius: 10px; /* Apply border-radius to all images */
+  margin-bottom: 20px; /* Space below the image */
+  object-fit: cover; /* Maintain aspect ratio and cover space */
+}
+
+/* Styles for images in step 1 */
+.onboarding-image1 {
+  width: 300px; /* Smaller width for step 1 image */
+  height: 300px; /* Smaller height for step 1 image */
+}
+
+/* Styles for images in step 2 */
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  gap: 10px; /* Space between images */
+  margin-bottom: 20px;
+}
+
+.grid-image {
+  width: 100%; /* Make grid images responsive */
+  border-radius: 10px; /* Same border radius */
+  height: 200px; /* Fixed height for grid images */
+  object-fit: cover; /* Maintain aspect ratio */
+}
+
+/* Styles for images in step 3 */
+.onboarding-image3 {
+  width: 100px; /* Slightly larger width for step 3 image */
+  height: 100px; /* Slightly larger height for step 3 image */
+}
+
+.onboarding-buttons {
+  margin-top: 20px;
+  display: flex; /* Flexbox for button layout */
+  justify-content: space-between; /* Space between buttons */
+  width: 100%; /* Full width for buttons */
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  background-color: #EC407A; /* Button color */
+  color: white; /* Button text color */
+  cursor: pointer;
+  margin: 0 5px; /* Margin for spacing */
+  transition: background-color 0.3s;
+  flex: 1; /* Allow buttons to grow equally */
+  
+}
+
+button:hover {
+  background-color: #D81B60; /* Darker shade on hover */
+}
+
+.final-buttons {
+  margin-top: 20px;
+  display: flex; /* Flexbox for final buttons layout */
+  justify-content: space-between; /* Space out buttons */
+  width: 100%; /* Full width for buttons */
+}
+
+.step-indicator {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.dots {
+  height: 10px;
+  width: 10px;
+  margin: 0 5px;
+  background-color: #c5bec0; /* Inactive dot color */
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dots.active {
+  background-color: #D81B60; /* Active dot color */
+}
+
+.onboarding-title {
+  font-size: 2.5em; /* Change font size */
+  font-weight: bold; /* Make it bold */
+  color: #D81B60; /* Change text color */
+  margin-bottom: 20px; /* Add spacing below the heading */
+  text-align: center; /* Center align the text */
+  text-transform: uppercase; /* Transform text to uppercase */
+}
+
+.image-container {
+  background-color: #FFD8E4; /* Set the desired background color */
+  padding: 10px; /* Add padding for spacing around the image */
+  border-radius: 10px; /* Match the border radius of the images */
+  display: inline-block; /* Keep the container inline with the image */
+  width: 100%; /* Full width to ensure consistent size */
+}
+
+.home-button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  background-color: #EC407A; /* Button color */
+  color: white; /* Button text color */
+  cursor: pointer;
+  margin: 0px; /* No margin between buttons */
+  transition: background-color 0.3s;
+
+}
+
+.home-button:hover {
+  background-color: #D81B60; /* Darken color on hover */
+}
+

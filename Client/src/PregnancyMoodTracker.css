@@ -1,0 +1,133 @@
+.pregnancy-mood-tracker {
+    width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    min-height: 100vh; /* Ensures there's enough height for the content */
+   margin-top: 40px;
+  }
+  
+ 
+  .pregnancy-image {
+    margin-bottom: 20px;
+    border-radius: 8px;
+    width: 100px;
+    height: 100px;
+  }
+  
+  .mood-selection {
+    margin-bottom: 30px;
+  }
+  
+  .mood-selection h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .mood-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+  }
+  
+  .mood-button {
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .mood-button:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .mood-button svg {
+    margin-right: 8px;
+  }
+  
+  .craving-input,
+  .reflection-input {
+    margin-top: 20px;
+  }
+  
+  .craving-input input,
+  .reflection-input textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .reflection-input textarea {
+    height: 100px;
+    resize: none;
+  }
+  
+ 
+  
+  .mood-calendar {
+    margin-top: 40px;
+  }
+  
+  .mood-calendar h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  
+  .day {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  .entry {
+    width: 150px;
+    padding: 10px;
+    border-radius: 8px;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .entry span {
+    display: block;
+    font-size: 12px;
+    margin-bottom: 8px;
+  }
+  
+  .entry p {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .entry small {
+    display: block;
+    margin-top: 5px;
+    font-size: 12px;
+  }
+  
+  .entry .mood {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .entry .craving,
+  .entry .reflection {
+    font-size: 12px;
+    color: #ccc;
+  }
+  

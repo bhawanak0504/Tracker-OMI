@@ -1,0 +1,204 @@
+.mental-care-container {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    height: calc(100vh - 70px - 60px); /* Adjust height to account for header and footer */
+    width: 100vw;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    padding-top: 70px; /* Based on header height */
+    padding-bottom: 70px; /* Extra space for footer height */
+    overflow-y: auto;
+
+}
+
+.mental-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    z-index: 1000;
+    border-bottom: 2px solid #000;
+    background-color: #FFD8E4;
+    
+}
+
+.back-arrow {
+    position: absolute;
+    left: 20px;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.title {
+    font-size: 28px;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.description {
+    color: #666;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.activity-options {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px; /* More space between activity cards */
+    margin-top: 20px;
+}
+
+.activity-card {
+    width: 240px; /* Increased width */
+    height: 280px; /* Set a fixed height */
+    padding: 20px;
+    background: linear-gradient(145deg, #e3f9ff, #d1e5ff); /* Gradient background for each card */
+    border: 2px solid #ddd;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+    color: #333;
+}
+.activity-card-games {
+    background: linear-gradient(145deg, #ffecb3, #ffca28); /* Yellow gradient */
+}
+
+.activity-card-exercise {
+    background: linear-gradient(145deg, #b2ebf2, #00acc1); /* Blue gradient */
+}
+
+.activity-card-baby {
+    background: linear-gradient(145deg, #c8e6c9, #66bb6a); /* Green gradient */
+}
+
+.activity-card-music {
+    background: linear-gradient(145deg, #e1bee7, #ab47bc); /* Purple gradient */
+}
+
+/* Maintain the hover and selected effects */
+.activity-card:hover,
+.activity-card.selected {
+    transform: scale(1.08);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    filter: brightness(1.1); /* Slightly brighten on hover */
+}
+
+
+
+.activity-avatar {
+    width: 100px; /* Larger icon size */
+    height: 100px;
+    margin-bottom: 15px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+.activity-content {
+    margin-top: 30px;
+    padding: 25px;
+    background-color: #ffffff; /* Keeping white for contrast */
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+    animation: fadeIn 0.5s ease-in-out;
+    border: 2px solid #ff4081; /* Adding a bright border */
+}
+
+.activity-content h2 {
+    color: #ff4081; /* Bright pink for the heading */
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Adding a subtle shadow */
+}
+
+.activity-content-frame {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    margin-top: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    background-color: #e0f7fa; /* Light cyan background for frames */
+}
+
+.close-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    padding: 12px 24px;
+    background-color: #ed407c; /* Bright teal for the button */
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s; /* Adding a scale effect */
+    width: 500px;
+    margin-left: 450px;
+    
+}
+
+.close-btn:hover {
+    background-color: #ed407c; /* Darker teal on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Animation for content fade-in */
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(10px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+
+.games-row {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  
+  .game-option {
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .game-image {
+    width: 100px; /* Adjust based on your design */
+    height: 100px; /* Adjust based on your design */
+    border-radius: 8px;
+    margin-bottom: 8px;
+  }
+  
+  .game-option:hover {
+    transform: scale(1.05);
+    transition: transform 0.2s;
+  }
+  
+  .video-gallery {
+    display: flex;
+    flex-direction: column; /* Stack logos vertically */
+    gap: 10px; /* Space between logos */
+    align-items: center; /* Center logos in the container */
+}
+
+.video-logo {
+    width: 500px; /* Limit width of the logos */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Optional rounded corners */
+    transition: transform 0.2s; /* Smooth scaling on hover */
+}
+
+.video-logo:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}

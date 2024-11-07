@@ -1,0 +1,121 @@
+:root {
+    --primary-bg-color: #FFD8E4; /* Light background color */
+    --primary-color: #EC407A; /* Button background color */
+    --text-color: rgba(0, 0, 0, 0.87); /* Text color for better contrast */
+    --link-color: #000; /* Darker color for links */
+    --heading-color: #000;
+}
+
+* {
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 320px;
+    min-height: 100vh;
+    background-color: var(--primary-bg-color);
+}
+
+.login-container {
+    background-color: white; /* White background for the login container */
+    background-image: url('assets/Login.png'); /* Set the background image */
+    background-size: cover; /* Cover the entire container */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    padding: 20px;
+ 
+    width: 90%; /* Use percentage for responsiveness */
+    max-width: 900px; /* Maximum width to limit size on larger screens */
+    margin: 20px; /* Margin to separate from edges */
+      padding: 20px; /* Adjust as necessary */
+     
+}
+
+
+h2 {
+    text-align: center; /* Center the heading */
+    color: var(--heading-color); /* Use the link color for the heading */
+   
+}
+
+label {
+    font-weight: bold; /* Make labels bold */
+    color: black /* Use the link color for labels */
+}
+
+input {
+    border-radius: 5px; /* Rounded corners for inputs */
+    border: 1px solid #000000; /* Black border */
+    padding: 10px; /* Padding for inputs */
+    width: 100%; /* Full width */
+    margin-bottom: 15px; /* Space below inputs */
+    background-color: transparent; /* Transparent background */
+    color: #000000; /* Black text color for better contrast */
+}
+
+input::placeholder {
+    color: rgba(0, 0, 0, 0.5); /* Light black for placeholder text for better visibility */
+}
+
+
+input:focus {
+    border-color: black; /* Change border color on focus */
+    outline: none; /* Remove outline */
+    box-shadow: none; 
+}
+
+button {
+    border-radius: 8px; /* Rounded corners */
+    border: none; /* Remove border */
+    padding: 0.6em 1.2em; /* Padding for the button */
+    font-size: 1em; /* Font size for the button */
+    font-weight: 500; /* Font weight for the button */
+    background-color: var(--primary-color); /* Button background color */
+    color: white; /* White text on buttons for contrast */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Transition effect */
+    width: 100%; /* Full width */
+}
+
+button:hover {
+    background-color: #d81b60; /* Darker shade on hover */
+}
+
+p {
+    text-align: center; /* Center the text */
+    color: var(--link-color); /* Use the link color for paragraph */
+}
+
+a {
+    font-weight: 500; /* Font weight for links */
+    color: var(--link-color); /* Link color */
+    text-decoration: none; /* Remove underline */
+}
+
+a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.btn {
+    background-color: #EC407A;
+    color: white;
+}
+
+.btn:hover {
+    background-color: #d81b60;
+    color: aliceblue;
+}
+.sign{
+    color: #000;
+    margin-bottom: 10px;
+  
+}
+.sign:hover{
+   color: #d81b60;
+}

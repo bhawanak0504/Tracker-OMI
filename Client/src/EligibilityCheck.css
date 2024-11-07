@@ -1,0 +1,109 @@
+/* Eligibility Check Container */
+.eligible {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px; /* Adjust margin as necessary */
+}
+
+/* Eligibility Check button styling */
+.eligible-item {
+    padding: 10px 20px;
+    background-color: #007bff; /* Primary color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.eligible-item:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Modal overlay styling */
+.eligible-model {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensure modal is above other content */
+}
+
+/* Modal content styling */
+.eligble-content {
+    background-color: white; /* Solid background for modal content */
+    border-radius: 8px;
+    padding: 20px; /* Padding inside the modal */
+    width: 400px; /* Fixed width for consistency */
+    max-width: 90%; /* Responsive max width */
+    max-height: 80%; /* Limit the height */
+    overflow-y: auto; /* Scroll if content exceeds max height */
+    text-align: center;
+    font-weight: bolder;
+}
+
+/* Form group styling */
+form div {
+    margin-bottom: 15px; /* Space between form fields */
+}
+
+/* Input styling */
+input[type="number"],
+input[type="checkbox"] {
+    margin-top: 5px; /* Space above inputs */
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Check button styling */
+.check-button {
+    padding: 10px 20px;
+    background-color: #28a745; /* Success color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.check-button:hover {
+    background-color: #218838; /* Darker shade on hover */
+}
+
+/* Eligibility status styling */
+p {
+    margin-top: 15px;
+    font-size: 16px;
+    text-align: center; /* Center the text */
+}
+
+/* Close button styling */
+.closess-button {
+    padding: 10px 20px;
+    background-color: #007bff; /* Danger color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 15px; /* Space above the button */
+    transition: background-color 0.3s;
+}
+
+.closess-button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}

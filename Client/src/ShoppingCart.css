@@ -1,0 +1,144 @@
+.shopping-cart-container {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    height: 100vh; /* Full height of the viewport */
+    width: 100vw; /* Full width of the viewport */
+    border-radius: 0; /* No rounded corners */
+    margin: 0; /* No margins */
+    box-shadow: none; /* Remove shadow if unnecessary */
+    display: flex;
+    flex-direction: column;
+    overflow-y: hidden; /* Disable vertical scrolling for the main container */
+    overflow-x: hidden; /* Disable horizontal scrolling */
+}
+
+.shop-header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 2px solid #000; /* Black bottom border */
+    width: 100%;
+}
+
+.close-icon {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+}
+
+.shop-layout {
+    display: flex;
+    margin-top: 20px;
+    flex-grow: 1; /* Allow the layout to grow and fill available space */
+    overflow: hidden; /* Prevent overflow of the shop layout */
+}
+
+.sidebar {
+    flex: 1; /* Take up 1 part of the available space */
+    padding: 10px;
+    background-color: white; /* Light background for sidebar */
+    border-radius: 10px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column; /* Stack category items vertically */
+    align-items: center; /* Center items horizontally */
+}
+
+.category-item {
+    display: flex;
+    flex-direction: column; /* Stack image and button */
+    justify-content: center;
+    align-items: center; /* Center items */
+    margin: 10px; /* Spacing between items */
+    transition: transform 0.3s; /* Animation on hover */
+}
+
+.category-item img {
+    width: 100px; /* Adjust as needed */
+    height: 100px; /* Adjust as needed */
+    border-radius: 50%; /* Make the image circular */
+}
+
+.category-button {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #ffe6e6; /* Light background for category buttons */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center; /* Center button text */
+}
+
+/* Styles for the product section */
+.product-section {
+    flex: 3; /* Take up 3 parts of the available space */
+    max-height: calc(100vh - 200px); /* Adjust based on header and footer heights */
+    overflow-y: auto; /* Allow vertical scrolling */
+}
+
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px; /* Spacing between product cards */
+}
+
+.product-card {
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #FFF; /* White background for product cards */
+}
+
+.product-card img {
+    width: 100%; /* Make the image take the full width of the card */
+    height: 150px; /* Set a fixed height for uniformity */
+    object-fit: cover; /* Ensure images cover the area without distortion */
+}
+
+/* Cart section */
+.cart-section {
+    flex: 2; /* Take up 2 parts of the available space */
+    margin-left: 20px;
+    max-height: 60vh; /* Set a max height for the cart section */
+    overflow: hidden; /* Disable scrolling for cart items */
+    overflow-y: visible;
+}
+
+.cart-items {
+    max-height: 100%; /* Allow cart items to fit within the max height */
+    overflow: visible; /* Show all items without scrolling */
+}
+
+.cart-item {
+    display: flex; /* Flexbox for item layout */
+    justify-content: space-between; /* Space between item details and remove button */
+    align-items: center; /* Center items vertically */
+    padding: 10px; /* Padding for cart items */
+}
+
+.checkout-button,
+.submit-order-button {
+    background-color: #ff8080; /* Light red for buttons */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.checkout-form input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+/* Optional hover effect for category items */
+.category-item:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
