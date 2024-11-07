@@ -48,7 +48,7 @@ Clone the Repository:
 
 bash
 Copy code
-git clone https://github.com/Bhumi2004/Project-Maternity-
+git clone https://github.com/Bhumi2004/Project-Maternity-/tree/new-branch-name
 Install Dependencies:
 
 bash
