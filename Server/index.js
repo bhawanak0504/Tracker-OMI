@@ -401,6 +401,6 @@ app.get('/resources', (req, res) => {
 
 
 // Start the server
-app.listen(3001, () => {
+app.listen(3001, '0.0.0.0', () => {
   console.log("Server is Running on port 3001");
 });
