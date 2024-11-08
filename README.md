@@ -78,6 +78,15 @@ Powerful Cloud Infrastructure: Ensures smooth real-time tracking and AI insights
 Load Balancers: Intelligent distribution for security and scalability.
 Global Reach: Low latency for virtual consultations, no matter the location.
 One-Click Installers: Easy setup for supplementary tools and systems.
+we used :
+#Optimized Cloud Compute 
+#Docker
+#Ubuntu
+#Mongodb
+#Nignx
+Deployed:http://139.84.173.52
+
+
 Expected Outcomes 🌈
 Through this app, we aim to:
 
