@@ -10,7 +10,8 @@ import image7 from '../assets/image7.png';
 import image8 from '../assets/image8.png';
 import image9 from '../assets/image9.png';
 
-import './Onboarding.css'; // Import your CSS styles
+import "../Onboarding.css";
+
 
 function Onboarding() {
   const [step, setStep] = useState(0);
