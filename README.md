@@ -63,7 +63,7 @@ Our app is designed with two main audiences in mind:
 ## Feasibility & Scalability 🔍
 
 - **Technical Feasibility**: The app’s tech stack (React, Node.js, MongoDB, socket.io) provides scalability and smooth performance, even for real-time features.
-- **Complexity (Medium)**: Integrating AI, wearables, and external APIs adds complexity, but well-documented tools and APIs make this manageable.
+- **Complexity (Medium)**: Integrating AI, and external APIs adds complexity, but well-documented tools and APIs make this manageable.
 - **Resource Allocation**: Partnering with clinics and insurance providers enables licensed doctor consultations and comprehensive maternity coverage directly in the app.
 
 ---
@@ -112,7 +112,6 @@ Our app relies on Vultr’s robust cloud infrastructure to deliver high performa
 - **Powerful Cloud Infrastructure**: Ensures smooth real-time tracking and AI insights.
 - **Load Balancers**: Intelligent distribution for security and scalability.
 - **Global Reach**: Low latency for virtual consultations, no matter the location.
-- **One-Click Installers**: Easy setup for supplementary tools and systems.
 
 **Technologies Used**:
 
