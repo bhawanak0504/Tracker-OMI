@@ -105,6 +105,17 @@ npm start
 
 ---
 
+## The Lavarel Chatbot Using Vultr API Key 🗝️
+This is a Laravel-based chatbot application that assists expectant mothers with common pregnancy-related queries. The application uses a chatbot to provide answers to questions about health, diet, symptoms, and more, aimed at guiding users through their pregnancy journey.
+#Features
+Pregnancy-related queries: The chatbot can answer common pregnancy questions like "How to stay healthy during pregnancy?", "What are common pregnancy symptoms?", and "What should I eat during pregnancy?"
+CSRF Protection: CSRF token is used to ensure secure communication.
+Customizable Responses: Easily extendable chatbot logic for adding more questions and answers.
+User Interface: Simple and interactive chat interface.
+#Github-Link: https://github.com/Bhumi2004/Project-Maternity-/tree/new-branch-name
+
+---
+
 ## Use of Vultr Cloud Service ☁️
 
 Our app relies on Vultr’s robust cloud infrastructure to deliver high performance and scalability:
