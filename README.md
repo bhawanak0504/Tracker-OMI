@@ -188,7 +188,7 @@ This project is licensed under the **MIT License**. See the LICENSE file for mor
 
 ## Let’s Connect! 📬
 
-Have questions or feedback? We’d love to hear from you! Contact us at **bhumijain127@gmail.com**.
+Have questions or feedback? We’d love to hear from you! Contact us at **bhawanak768@gmail.com**.
 
 ---
 
