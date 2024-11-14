@@ -79,9 +79,3 @@ If you would like to contribute to the development of the Maternity and Baby Hub
 ## *License*
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-### *Notes*
-- The app currently doesn’t include integration with external systems like OMI. If you plan to add such integrations in the future, you can modify the backend to handle webhooks or API calls from third-party systems.
-- Ensure that you test the app thoroughly, especially for functionalities like real-time updates and virtual consultations.
