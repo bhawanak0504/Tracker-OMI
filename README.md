@@ -1,7 +1,6 @@
 # *Maternity and Baby Hub App*
-
-*Author*: Bhumi Jain  
-*Description*: Maternity and Baby Hub is a comprehensive digital platform designed to support expectant and new mothers with real-time symptom tracking, baby health monitoring, personalized care recommendations, and mental health resources. It also provides virtual consultations with healthcare professionals to ensure the well-being of both the mother and the baby.
+ 
+Maternity and Baby Hub is a comprehensive digital platform designed to support expectant and new mothers with real-time symptom tracking, baby health monitoring, personalized care recommendations, and mental health resources. It also provides virtual consultations with healthcare professionals to ensure the well-being of both the mother and the baby.
 
 ## *Features*
 - *Symptom Tracking*: Allows mothers to track their pregnancy symptoms and monitor the health status of their baby in real time.
@@ -20,28 +19,27 @@ You can watch a demo video of the app to see how it works:
 
 [Watch the Demo Video](https://youtu.be/8eBYlzAw1v8?si=g12wVnaEhGdVvF3k)
 
-(Replace the URL with the actual URL of your video, whether it's hosted on YouTube, Vimeo, or any other platform.)
 
 ## *Setup Instructions*
 ### 1. *Clone the Repository*
 Clone the repository to your local machine:
 
-bash
-git clone https://github.com/yourusername/maternity-and-baby-hub.git
-cd maternity-and-baby-hub
+
+         git clone https://github.com/yourusername/maternity-and-baby-hub.git
+         cd maternity-and-baby-hub
 
 
 ### 2. *Install Dependencies*
 Install the required dependencies for both the backend and frontend:
 
-bash
+
 # For the backend (Node.js, Express)
-cd backend
-npm install
+      cd backend
+      npm install
 
 # For the frontend (React)
-cd ../frontend
-npm install
+     cd ../frontend
+     npm install
 
 
 ### 3. *Configure Database*
@@ -51,15 +49,15 @@ Ensure that you have your MongoDB database configured. If you're using *MongoDB 
 To run the app locally:
 
 1. *Start the backend*:
-   bash
-   cd backend
-   npm start
+   
+       cd backend
+       npm start
    
 
 2. *Start the frontend*:
-   bash
-   cd frontend
-   npm start
+   
+       cd frontend
+       npm start
    
 
 This will launch the app on http://localhost:3000 for the frontend, and the backend API will be running on http://localhost:5000.
